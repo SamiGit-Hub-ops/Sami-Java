@@ -1,2 +1,2 @@
 # Sami-Java
-Java-concepts/tranings/projects
+Java-my learning journey and projects
