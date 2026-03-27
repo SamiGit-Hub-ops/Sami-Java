@@ -1,9 +1,10 @@
 import java.util.Random;
 
 public class DiceRoller {
+//local variable = declared inside a method, visible only to that method
 
 //using constructor, passing arguments to the roll()
-//here there are no global variables
+//here there are no global variables only local variables
 
     DiceRoller() {
         Random random = new Random();
