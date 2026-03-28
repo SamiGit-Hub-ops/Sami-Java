@@ -16,6 +16,6 @@ public class Main {
         //person
         Person fury = new Person("Nick fury", "black");
 
-        System.err.println("\n"+fury.toString());
+        System.out.println("\n"+fury.toString());
     }
 }
