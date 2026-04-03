@@ -1,5 +1,6 @@
 compile = "javac -classpath .:target/dependency/* -d . $(find . -type f -name '*.java')"
-run = "java -classpath .:target/dependency/* Main"
+run = "find . -name '*.java' > sources.txt && javac @sources.txt -d . && java Main"
+
 entrypoint = "src/main/java/Main.java"
 hidden = ["**/*.class"]
 
@@ -20,6 +21,7 @@ language = "java"
 
 [nix]
 channel = "stable-22_11"
+packages = ["zulu"]
 
 [debugger]
 support = true
@@ -59,7 +61,14 @@ classPaths = ["."]
 mainClass = "Main"
 
 [deployment]
-build = ["javac", "-classpath", ".:target/dependency/*", "-d", ".", "$(find . -type f -name '*.java')"]
+build = [
+  "javac",
+  "-classpath",
+  ".:target/dependency/*",
+  "-d",
+  ".",
+  "$(find . -type f -name '*.java')",
+]
 run = ["java", "-classpath", ".:target/dependency/*", "Main"]
 deploymentTarget = "cloudrun"
 
