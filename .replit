@@ -1,4 +1,4 @@
-compile = "javac -source 1.8 -target 1.8 -classpath .:target/dependency/* -d . $(find . -type f -name '*.java')"
+compile = "javac -classpath .:target/dependency/* -d . $(find . -type f -name '*.java')"
 run = "java -classpath .:target/dependency/* Main"
 entrypoint = "src/main/java/Main.java"
 hidden = ["**/*.class"]
@@ -19,7 +19,7 @@ start = "jdt-language-server"
 language = "java"
 
 [nix]
-channel = "stable-23_05"
+channel = "stable-22_11"
 
 [debugger]
 support = true
@@ -59,14 +59,7 @@ classPaths = ["."]
 mainClass = "Main"
 
 [deployment]
-build = [
-  "javac",
-  "-classpath",
-  ".:target/dependency/*",
-  "-d",
-  ".",
-  "$(find . -type f -name '*.java')",
-]
+build = ["javac", "-classpath", ".:target/dependency/*", "-d", ".", "$(find . -type f -name '*.java')"]
 run = ["java", "-classpath", ".:target/dependency/*", "Main"]
 deploymentTarget = "cloudrun"
 
