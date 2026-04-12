@@ -1,0 +1,5 @@
+Process of executing multiple threads simultaneously, helps maximize CPU utilization.
+Threads are independent, they don't affect the execution of other threads.
+An exception in one thread will not interrupt other threads.
+Useful for serving multiple clients, multi player games or other mutually independent tasks.
+

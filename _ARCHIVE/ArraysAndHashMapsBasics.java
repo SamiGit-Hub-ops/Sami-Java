@@ -1,4 +1,4 @@
-package _ARCHIVE._ARCHIVE;
+package _ARCHIVE;
 
 
 import java.util.HashMap;

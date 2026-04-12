@@ -1,4 +1,4 @@
-package _ARCHIVE._ARCHIVE;
+package _ARCHIVE;
 
 public class nestedForLoops {
     public static void main(String[] args) {

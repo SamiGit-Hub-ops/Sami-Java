@@ -38,7 +38,7 @@ is a subclass of A */
 
     private access is only within that class and
     not visible in another class in same package, 
-    different package _ARCHIVE.or subclass */
+    different package or subclass */
 
         
     }
