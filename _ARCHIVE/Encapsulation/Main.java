@@ -10,8 +10,9 @@ public class Main {
         audi.setType("SUV");
         audi.setYear(2025);
 
-        //System.out.println( audi.getBrand()+"\n"+audi.getType()+"\n"+audi.getYear() );
+        System.out.println( audi.getBrand()+"\n"+audi.getType()+"\n"+audi.getYear() );
 
         System.out.println(audi.toString());
+        System.out.println(bmw.toString());
     }
 }

@@ -13,5 +13,6 @@ public class Main {
 //passing car object(instances) to method of Garage object ie myGarage.park()
         myGarage.park(bmw);
         myGarage.park(rr);
+        myGarage.park(mas);
      }
 }
